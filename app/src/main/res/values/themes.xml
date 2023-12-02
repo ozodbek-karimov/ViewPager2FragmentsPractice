@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ViewPager2FragmentsPractice" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ViewPager2FragmentsPractice" parent="Base.Theme.ViewPager2FragmentsPractice" />
+
+
+    <style name="CustomTabLayoutStyle2" parent="Widget.Design.TabLayout">
+        <item name="layout_scrollFlags">scroll</item>
+        <item name="tabIndicator">@color/white</item>
+        <item name="tabIndicatorColor">#0D59AC</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabUnboundedRipple">true</item>
+        <item name="tabRippleColor">@color/mediumGray</item>
+        <item name="layout_scrollEffect">none</item>
+        <item name="tabSelectedTextColor">#0D59AC</item>
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabInlineLabel">false</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorAnimationDuration">@android:integer/config_shortAnimTime</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+</resources>
