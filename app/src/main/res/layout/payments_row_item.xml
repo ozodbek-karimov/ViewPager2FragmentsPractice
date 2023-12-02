@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    android:layout_height="wrap_content">
+    app:cardCornerRadius="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/lightGray">
 
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -43,6 +44,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:text="Earnings(estimate)"
+            android:textColor="@color/darkGray"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="88.5km"
+            android:textColor="@color/darkGray"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="@+id/payment_tv"
@@ -78,13 +81,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="32"
-            android:textSize="20sp"
             android:textColor="@color/darkGray"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="@+id/distance_tv"
             app:layout_constraintTop_toTopOf="@+id/textView6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </com.google.android.material.card.MaterialCardView>

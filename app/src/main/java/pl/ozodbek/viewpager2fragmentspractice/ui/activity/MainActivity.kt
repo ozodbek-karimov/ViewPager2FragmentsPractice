@@ -23,7 +23,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        setupActionBar()
         setupViewPager2()
+    }
+
+    private fun setupActionBar() {
+        this.setSupportActionBar(binding.toolbar)
+        this.title = "Payments"
     }
 
     private fun setupViewPager2() {
@@ -37,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         titles.add(WEEKLY_PAYMENTS_FRAGMENT_NAME)
         titles.add(MONTHLY_PAYMENTS_FRAGMENT_NAME)
 
+
+        /** If you want to share data across tabLayout fragments set data to Bundle and use it */
 
         val pagerAdapter = FragmentStateAdapter(
             Bundle(), fragments, this
